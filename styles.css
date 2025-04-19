@@ -30,6 +30,8 @@ body {
     margin-top: 300px;
 
     background-color: beige;
+
+    border-radius: 5px;
 }
 
 .calc-header {
@@ -41,10 +43,14 @@ body {
 }
 
 .calc-terminal {
-    padding: 50px;
     background-color:grey;
     width: 100%;
-    height: auto;
+    height: 100px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: right;
+    align-items: last baseline;
 
 }
 
@@ -81,3 +87,5 @@ button {
     height: 70px;
     font-size: 20px; 
 }
+
+
