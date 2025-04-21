@@ -3,53 +3,76 @@
 
 * {
     box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
 
 .calc-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-
-body {
-    font-family: 'Roboto', sans-serif;
-  }
-
 
 
 
 
 .calc {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calc {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
     align-items: center;
-
-    width: 300px;
-    height: 550px;
-
+    width: 350px;
+    height: 580px;
     margin-top: 300px;
-
     background-color: beige;
+    border-radius: 55px;
+    padding: 0px;
 
-    border-radius: 5px;
+    
 }
 
 .calc-header {
-    padding: 10px;
+    padding: 15px 0;  
     display: flex;
+    justify-content: center;
     align-items: center;
-
-    font-size: 20px;
+    background-color: #4caf50; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
+.calc-header div {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 10px; 
+    text-align: center; 
+}
 .calc-terminal {
     background-color:grey;
-    width: 100%;
+    width: 84%;
     height: 100px;
     padding: 10px;
+    margin-top: 7px;
 
     display: flex;
     justify-content: right;
@@ -65,6 +88,7 @@ body {
     justify-content: flex-end; 
     align-items: center;
     text-align: right;
+    font-size: 20px;
     
     width: 100%;        
     overflow-x: auto;
@@ -78,13 +102,23 @@ body {
 .clear-delete-container {
     display: flex;
     
-    width: 100%;
+    width: 84%;
     gap: 10px;
     justify-content: space-around;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
 }
 
 #clearDel {
     flex-grow: 1;
+
+    border-radius: 10px;
+    border-style: solid;
+    
+    height: 50px;
+    width: 50px;
+
 
 }
 
@@ -101,12 +135,29 @@ body {
 
 .main-grid {
     width: fit-content;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    gap: 5px;
 }
 
 button {
     width: 70px;
     height: 70px;
-    font-size: 20px; 
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    transition: all 0.2s ease-in-out;
 }
 
+button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05); /* Slight scale up */
+}
+
+button:active {
+    background-color: #d0d0d0;
+    transform: scale(1); /* No shrinking, keep it the same size */
+}
 
