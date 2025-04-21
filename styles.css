@@ -1,3 +1,6 @@
+/* TODOroudned edges */
+
+
 * {
     box-sizing: border-box;
 }
@@ -52,7 +55,25 @@ body {
     justify-content: right;
     align-items: last baseline;
 
+    flex-wrap: wrap;
+
+    
 }
+
+.terminal-text {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: right;
+    
+    width: 100%;        
+    overflow-x: auto;
+    white-space: nowrap;         
+    
+    
+    border: none;
+    box-sizing: border-box;
+  }
 
 .clear-delete-container {
     display: flex;
